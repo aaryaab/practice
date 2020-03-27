@@ -1,0 +1,25 @@
+/*An old-style movie theater has a simple profit program. Each
+customer pays $5 per ticket. Every performance costs the theater
+$20, plus $.50 per attendee. Develop the program 
+calculateTotalProfit that consumes the number of attendees 
+(of a show) and calculates how much income the show earns*/
+
+package practice;
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.lang.Math.*;
+public class solution {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc= new Scanner(System.in);
+int ticket =5;
+int audience= sc.nextInt();
+double costToTheatre=(audience*0.5)+20;
+int income=audience*ticket;
+double profit=income-costToTheatre;
+System.out.println("income is "+income);
+System.out.println("profit is "+ profit);
+}
+
+}

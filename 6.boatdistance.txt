@@ -1,0 +1,25 @@
+/*Develop a program that computes the distance 
+ a boat travels across a river, given the width of
+ the river, the boat's speed perpendicular to the 
+ river, and the river's speed. Speed is distance/time, 
+ and the Pythagorean Theorem is c2 = a2 + b2.*/
+package practice;
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.lang.Math.*;
+public class solution {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc= new Scanner(System.in);
+int width =sc.nextInt();
+int riverSpeed=sc.nextInt();
+int boatSpeed=sc.nextInt();
+double time =width/boatSpeed;
+double riverDistance = time*riverSpeed;
+double totalDistance = Math.sqrt((width*width)+(riverDistance*riverDistance));
+
+System.out.println("total Distance is  "+ totalDistance);
+}
+
+}

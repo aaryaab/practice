@@ -1,0 +1,20 @@
+/* Develop the program calculateCylinderVolume., 
+ accepts radius of a cylinder's base disk and its height and 
+ computes the volume of the cylinder.*/
+
+package practice;
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.lang.Math.*;
+public class solution {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc= new Scanner(System.in);
+int r= sc.nextInt();
+int h =sc.nextInt();
+double v=r*r*h*Math.PI;
+System.out.println(v);
+}
+
+}

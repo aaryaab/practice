@@ -1,0 +1,70 @@
+/*Create Vehicle having following attributes: Vehicle No., Model,
+ *  Manufacturer and Color. Create truck which has the following
+ *  additional attributes:loading capacity( 100 tons…).Add a behavior 
+ *  to change the color and loading capacity. Display the updated truck details.
+ */
+
+
+import java.util.Scanner;
+class Vehicle{
+	int vehicleNo;
+	String model;
+	String manufacturer;
+	String color;
+	public int getVehicleNo() {
+		return vehicleNo;
+	}
+	public void setVehicleNo(int vehicleNo) {
+		this.vehicleNo=vehicleNo;
+	}
+	
+	public String getModel() {
+		return model;
+	}
+	public void setModel(String model) {
+		this.model=model;
+	}
+	
+	public String getManufacturer() {
+		return manufacturer;
+	}
+	public void setManufacturer(String manufacturer) {
+		this.manufacturer=manufacturer;
+	}
+	
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color=color;
+	}
+}
+class capacity{
+int loadcapacity;
+public int getLoadCapacity() {
+	return loadcapacity;
+}
+public void setLoadCapacity(int loadCapacity) {
+	this.loadcapacity=loadCapacity;
+}
+	
+public class truck {
+	
+
+	public void main(String[] args) {
+		// TODO Auto-generated method stub
+		Vehicle v = new Vehicle();
+		capacity c = new capacity();
+		Scanner sc = new Scanner(System.in);
+		int vehicleNo=sc.nextInt();
+		String model=sc.next();
+		String manufacturer=sc.next();
+		String color=sc.next();
+		int loadcapacity =sc.nextInt();
+		System.out.println(v.getVehicleNo());
+		System.out.println(v.getModel());
+		System.out.println(v.getManufacturer());
+		System.out.println(v.getColor());
+		System.out.println(c.getLoadCapacity());
+}
+}}

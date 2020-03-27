@@ -1,0 +1,43 @@
+ /*Create a Bank class with methods deposit & withdraw. The deposit method would 
+ accept attributes amount & balance & returns the new balance which is
+ the sum of amount & balance. Similarly, the withdraw method would accept the attributes amount &
+ balance & returns the new balance ‘balance – amount’ if balance > = amount or return 0 otherwise.*/
+package practice;
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.lang.Math.*;
+class Customer{
+	int bal;
+	Customer (int bal){
+		this.bal=bal;
+	}
+	int deposit(int amt) {
+		bal=bal+amt;
+		System.out.println("the balanc is " + bal);
+		return bal;
+	}
+	int withdraw(int amt) {
+		if(amt>bal) {
+			System.out.println("insufficient balance");
+		return 0;}else {
+			bal=bal-amt;
+			System.out.println(" the blaance remaining is "+bal);
+			return bal;
+		}
+	}
+	
+}
+
+
+
+public class solution {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Customer c  = new Customer(15000);
+int bal=c.deposit(1000);
+int withdraw=c.withdraw(7000);
+
+}
+
+}

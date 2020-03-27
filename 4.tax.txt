@@ -1,0 +1,26 @@
+/*Utopias tax accountants always use programs that compute income 
+taxes even though the tax rate is a solid, 
+never-changing 15%. Define the program
+calculateTax which determines the tax on the gross pay. Define
+calculateNetPay that determines the net pay of an employee
+from the number of hours worked. Assume an hourly rate of $12.*/
+package practice;
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.lang.Math.*;
+public class solution {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc= new Scanner(System.in);
+int hours= sc.nextInt();
+int days =sc.nextInt();
+int total=hours*days;
+int grossIncome=total*12;
+double tax=(15*total)/100;
+double netPay = grossIncome-tax;
+System.out.println("tax is "+tax);
+System.out.println("gross income is "+ netPay);
+}
+
+}

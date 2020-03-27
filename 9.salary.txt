@@ -1,0 +1,42 @@
+ /* Create an Employee class which has methods netSalary which 
+  * would accept salary & tax as arguments & returns the 
+  * netSalary which is tax deducted from the 
+  * salary. Also it has a method grade which would accept the grade
+  *  of the employee & return grade.*/
+package practice;
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.lang.Math.*;
+class Employee{
+
+public double	netSalary(double salary,double tax_rate) {
+		double tax = (salary*tax_rate)/100;
+		System.out.println(tax);
+		double left_salary=salary-tax;
+		return left_salary;
+		}
+	public static String grade() {
+		Scanner input = new Scanner(System.in);
+		System.out.println("enter grade");
+		String grade = input.next();
+		return grade;
+	}
+}
+
+
+
+public class solution {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner input = new Scanner(System.in);
+		Employee emp = new Employee();
+double sal = input.nextDouble();
+double tax=input.nextDouble();
+double net =emp.netSalary(sal,tax);
+System.out.println(net);
+String g =emp.grade();
+System.out.println(g);
+}
+
+}
