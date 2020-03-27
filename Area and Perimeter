@@ -1,0 +1,19 @@
+
+package practice;
+import java.util.Scanner;
+import java.util.ArrayList;
+public class solution {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc= new Scanner(System.in);
+int x = sc.nextInt();
+double  y = Math.sqrt(x);
+double z =4*y;
+System.out.println(z);
+
+
+
+	}
+
+}
