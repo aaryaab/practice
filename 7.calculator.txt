@@ -1,8 +1,4 @@
- /*Develop a program that computes the distance 
- a boat travels across a river, given the width of
- the river, the boat's speed perpendicular to the 
- river, and the river's speed. Speed is distance/time, 
- and the Pythagorean Theorem is c2 = a2 + b2.*/
+ /* Creating Calculator */
 package practice;
 import java.util.Scanner;
 import java.util.ArrayList;
